@@ -1,0 +1,30 @@
+{
+  "name": "web-images-js-bench-2019-10",
+  "version": "0.0.0",
+  "scripts": {
+    "build:ts": "./node_modules/.bin/babel src --out-dir dist --extensions '.ts','.js'",
+    "build": "npm run build:ts",
+    "start": "npm run build && node dist/main.js"
+  },
+  "author": "Colbyn Wadman",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7",
+    "@babel/core": "^7",
+    "@babel/plugin-proposal-class-properties": "^7",
+    "@babel/polyfill": "^7",
+    "@babel/preset-env": "^7",
+    "@babel/preset-typescript": "^7",
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.7.12",
+    "babel-preset-env": "^1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@types/sharp": "^0.23.0",
+    "jimp": "^0.8.4",
+    "sharp": "^0.23.1",
+    "web-images": "0.0.13"
+  }
+}
